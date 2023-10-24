@@ -1,0 +1,745 @@
+ AddPlayerSalary(playerid, "Hauling Trucker", 3600);
+				pData[playerid][pJobTime] += 900;
+                DialogHauling[0] = false;
+                DialogSaya[playerid][0] = false;
+                DestroyVehicle(GetVehicleTrailer(GetPlayerVehicleID(playerid)));
+                Truck(playerid, "{00ff00}$1.200 have been issued to your {FFFF00}/salary");
+                return 1;
+			}
+		}
+		else if(SedangHauling[playerid] == 3)
+	    {
+     		DisablePlayerRaceCheckpoint(playerid);
+     		Truck(playerid, "{ffffff}Attach the trailer to your vehicle to order");
+  			SedangHauling[playerid] = 4;
+     		SetPlayerRaceCheckpoint(playerid, 1, -576.2687, 2569.0842, 53.5156, 576.2687, 2569.0842, 53.5156, 10.0);
+       		return 1;
+		}
+		else if(SedangHauling[playerid] == 4)
+		{
+			if(IsTrailerAttachedToVehicle(GetPlayerVehicleID(playerid)))
+			{
+			    DisablePlayerRaceCheckpoint(playerid);
+                SedangHauling[playerid] = 0;
+                AddPlayerSalary(playerid, "Hauling Trucker", 3000);
+				pData[playerid][pJobTime] += 900;
+                DialogHauling[1] = false;
+                DialogSaya[playerid][1] = false;
+                DestroyVehicle(GetVehicleTrailer(GetPlayerVehicleID(playerid)));
+                Truck(playerid, "{00ff00}$1.000 {ffffff}have been issued to your {FFFF00}/salary");
+                return 1;
+			}
+		}
+		else if(SedangHauling[playerid] == 5)
+	    {
+     		DisablePlayerRaceCheckpoint(playerid);
+     		Truck(playerid, "{ffffff}Attach the trailer to your vehicle to order");
+  			SedangHauling[playerid] = 6;
+     		SetPlayerRaceCheckpoint(playerid, 1, 1424.8624, 2333.4939, 10.8203, 1424.8624, 2333.4939, 10.8203, 10.0);
+       		return 1;
+		}
+		else if(SedangHauling[playerid] == 6)
+		{
+			if(IsTrailerAttachedToVehicle(GetPlayerVehicleID(playerid)))
+			{
+			    DisablePlayerRaceCheckpoint(playerid);
+                SedangHauling[playerid] = 0;
+                AddPlayerSalary(playerid, "Hauling Trucker", 3300);
+				pData[playerid][pJobTime] += 900;
+                DialogHauling[2] = false;
+                DialogSaya[playerid][2] = false;
+                DestroyVehicle(GetVehicleTrailer(GetPlayerVehicleID(playerid)));
+                Truck(playerid, "{00ff00}$1.100 have been issued to your {FFFF00}/salary");
+                return 1;
+			}
+		}
+		if(SedangHauling[playerid] == 7)
+	    {
+     		DisablePlayerRaceCheckpoint(playerid);
+     		Truck(playerid, "{ffffff}Attach the trailer to your vehicle to order");
+  			SedangHauling[playerid] = 8;
+     		SetPlayerRaceCheckpoint(playerid, 1, 1198.7153, 165.4331, 20.5056, 1198.7153, 165.4331, 20.5056, 10.0);
+       		return 1;
+		}
+		else if(SedangHauling[playerid] == 8)
+		{
+			if(IsTrailerAttachedToVehicle(GetPlayerVehicleID(playerid)))
+			{
+			    DisablePlayerRaceCheckpoint(playerid);
+                SedangHauling[playerid] = 0;
+                AddPlayerSalary(playerid, "Hauling Trucker", 3900);
+				pData[playerid][pJobTime] += 900;
+                DialogHauling[3] = false;
+                DialogSaya[playerid][3] = false;
+                DestroyVehicle(GetVehicleTrailer(GetPlayerVehicleID(playerid)));
+                Truck(playerid, "{00ff00}$1.300 {ffffff}have been issued to your {FFFF00}/salary");
+                return 1;
+			}
+		}
+		else if(SedangHauling[playerid] == 9)
+	    {
+     		DisablePlayerRaceCheckpoint(playerid);
+     		Truck(playerid, "{ffffff}Attach the trailer to your vehicle to order");
+  			SedangHauling[playerid] = 10;
+     		SetPlayerRaceCheckpoint(playerid, 1, 1201.5385, 171.6184, 20.5035, 1201.5385, 171.6184, 20.5035, 10.0);
+       		return 1;
+		}
+		else if(SedangHauling[playerid] == 10)
+		{
+			if(IsTrailerAttachedToVehicle(GetPlayerVehicleID(playerid)))
+			{
+			    DisablePlayerRaceCheckpoint(playerid);
+                SedangHauling[playerid] = 0;
+                AddPlayerSalary(playerid, "Hauling Trucker", 3450);
+				pData[playerid][pJobTime] += 900;
+                DialogHauling[4] = false;
+                DialogSaya[playerid][4] = false;
+                DestroyVehicle(GetVehicleTrailer(GetPlayerVehicleID(playerid)));
+                Truck(playerid, "{00ff00}$1.150 {ffffff}have been issued to your {FFFF00}/salary");
+                return 1;
+			}
+		}
+		else if(SedangHauling[playerid] == 11)
+	    {
+     		DisablePlayerRaceCheckpoint(playerid);
+     		Truck(playerid, "{ffffff}Attach the trailer to your vehicle to order");
+  			SedangHauling[playerid] = 12;
+     		SetPlayerRaceCheckpoint(playerid, 1, 2786.8313, -2417.9558, 13.6339, 2786.8313, -2417.9558, 13.6339, 10.0);
+       		return 1;
+		}
+		else if(SedangHauling[playerid] == 12)
+		{
+			if(IsTrailerAttachedToVehicle(GetPlayerVehicleID(playerid)))
+			{
+			    DisablePlayerRaceCheckpoint(playerid);
+                SedangHauling[playerid] = 0;
+                AddPlayerSalary(playerid, "Hauling Trucker", 3150);
+				pData[playerid][pJobTime] += 900;
+                DialogHauling[5] = false;
+                DialogSaya[playerid][5] = false;
+                DestroyVehicle(GetVehicleTrailer(GetPlayerVehicleID(playerid)));
+                Truck(playerid, "{00ff00}$1.050 {ffffff}have been issued to your {FFFF00}/salary");
+                return 1;
+			}
+		}
+		else if(SedangHauling[playerid] == 13)
+	    {
+     		DisablePlayerRaceCheckpoint(playerid);
+     		Truck(playerid, "{ffffff}Attach the trailer to your vehicle to order");
+  			SedangHauling[playerid] = 14;
+     		SetPlayerRaceCheckpoint(playerid, 1, 1613.7815, 2236.2046, 10.3787, 1613.7815, 2236.2046, 10.3787, 10.0);
+       		return 1;
+		}
+		else if(SedangHauling[playerid] == 14)
+		{
+			if(IsTrailerAttachedToVehicle(GetPlayerVehicleID(playerid)))
+			{
+			    DisablePlayerRaceCheckpoint(playerid);
+                SedangHauling[playerid] = 0;
+                AddPlayerSalary(playerid, "Hauling Trucker", 3750);
+				pData[playerid][pJobTime] += 900;
+                DialogHauling[6] = false;
+                DialogSaya[playerid][6] = false;
+                DestroyVehicle(GetVehicleTrailer(GetPlayerVehicleID(playerid)));
+                Truck(playerid, "{00ff00}$1.250 {ffffff}have been issued to your {FFFF00}/salary");
+                return 1;
+			}
+		}
+		else if(SedangHauling[playerid] == 15)
+	    {
+     		DisablePlayerRaceCheckpoint(playerid);
+     		Truck(playerid, "{ffffff}Attach the trailer to your vehicle to order");
+  			SedangHauling[playerid] = 16;
+     		SetPlayerRaceCheckpoint(playerid, 1, 2415.7803, -2470.1309, 13.6300, 2415.7803, -2470.1309, 13.6300, 10.0);
+       		return 1;
+		}
+		else if(SedangHauling[playerid] == 16)
+		{
+			if(IsTrailerAttachedToVehicle(GetPlayerVehicleID(playerid)))
+			{
+			    DisablePlayerRaceCheckpoint(playerid);
+                SedangHauling[playerid] = 0;
+                AddPlayerSalary(playerid, "Hauling Trucker", 3000);
+				pData[playerid][pJobTime] += 900;
+                DialogHauling[7] = false;
+                DialogSaya[playerid][7] = false;
+                DestroyVehicle(GetVehicleTrailer(GetPlayerVehicleID(playerid)));
+                Truck(playerid, "{00ff00}$1.000 {ffffff}have been issued to your {FFFF00}/salary");
+                return 1;
+			}
+		}
+		else if(SedangHauling[playerid] == 17)
+	    {
+     		DisablePlayerRaceCheckpoint(playerid);
+     		Truck(playerid, "{ffffff}Attach the trailer to your vehicle to order");
+  			SedangHauling[playerid] = 18;
+     		SetPlayerRaceCheckpoint(playerid, 1, -980.1684, -713.3505, 32.0078, -980.1684, -713.3505, 32.0078, 10.0);
+       		return 1;
+		}
+		else if(SedangHauling[playerid] == 18)
+		{
+			if(IsTrailerAttachedToVehicle(GetPlayerVehicleID(playerid)))
+			{
+			    DisablePlayerRaceCheckpoint(playerid);
+                SedangHauling[playerid] = 0;
+                AddPlayerSalary(playerid, "Hauling Trucker", 4200);
+				pData[playerid][pJobTime] += 900;
+                DialogHauling[8] = false;
+                DialogSaya[playerid][8] = false;
+                DestroyVehicle(GetVehicleTrailer(GetPlayerVehicleID(playerid)));
+                Truck(playerid, "{00ff00}$1.400 {ffffff}have been issued to your {FFFF00}/salary");
+                return 1;
+			}
+		}
+		else if(SedangHauling[playerid] == 19)
+		{
+			DisablePlayerRaceCheckpoint(playerid);
+     		Truck(playerid, "{ffffff}Attach the trailer to your vehicle to order");
+			SedangHauling[playerid] = 20;
+			SetPlayerRaceCheckpoint(playerid, 1, -2226.1292, -2315.1055, 30.6045, -2226.1292, -2315.1055, 30.6045, 10.0);
+			return 1;
+		}
+		else if(SedangHauling[playerid] == 20)
+		{
+			if(IsTrailerAttachedToVehicle(GetPlayerVehicleID(playerid)))
+			{
+			    DisablePlayerRaceCheckpoint(playerid);
+	            SedangHauling[playerid] = 0;
+	            AddPlayerSalary(playerid, "Hauling Trucker", 4050);
+				pData[playerid][pJobTime] += 900;
+	            DialogHauling[9] = false;
+	            DialogSaya[playerid][9] = false;
+	            DestroyVehicle(GetVehicleTrailer(GetPlayerVehicleID(playerid)));
+                Truck(playerid, "{00ff00}$1.350 {ffffff}have been issued to your {FFFF00}/salary");
+	            return 1;
+			}
+		}
+	}
+	if(pData[playerid][pTrackCar] == 1)
+	{
+		Info(playerid, "Anda telah berhasil menemukan kendaraan anda!");
+		pData[playerid][pTrackCar] = 0;
+		DisablePlayerRaceCheckpoint(playerid);
+	}
+	if(pData[playerid][pTrackHouse] == 1)
+	{
+		Info(playerid, "Anda telah berhasil menemukan rumah anda!");
+		pData[playerid][pTrackHouse] = 0;
+		DisablePlayerRaceCheckpoint(playerid);
+	}
+	if(pData[playerid][pTrackBisnis] == 1)
+	{
+		Info(playerid, "Anda telah berhasil menemukan bisnis anda!");
+		pData[playerid][pTrackBisnis] = 0;
+		DisablePlayerRaceCheckpoint(playerid);
+	}
+	if(pData[playerid][pMission] > -1)
+	{
+		DisablePlayerRaceCheckpoint(playerid);
+		Info(playerid, "/buy , /gps(My Mission) , /storeproduct.");
+	}
+	if(pData[playerid][pHauling] > -1)
+	{
+		DisablePlayerRaceCheckpoint(playerid);
+		SetPlayerCheckpoint(playerid, 336.70, 895.54, 20.40, 5.5);
+		printf("[HAULING] %s's attached vehicle trailer", pData[playerid][pName]);
+		new Float:z;
+		GetVehicleZAngle(GetPlayerVehicleID(playerid), z);
+		pData[playerid][pTrailer] = CreateVehicle(584, 324.33, 858.41, 20.40, z, -1, -1, -1, 0);
+		AttachTrailerToVehicle(pData[playerid][pTrailer], GetPlayerVehicleID(playerid));
+	}
+	//DisablePlayerRaceCheckpoint(playerid);
+	return 1;
+}
+
+public OnPlayerEnterCheckpoint(playerid)
+{
+	// Checkpoint Job Micin
+	if (IsPlayerInRangeOfPoint(playerid, 4.0,2808.1736,-2230.7356,4.0762))
+    {
+        SetPlayerCheckpoint(playerid, 2825.5720,-2217.0366,6.1501, 4.0);
+        ApplyAnimation(playerid, "CARRY", "putdwn", 4.0, 0, 0, 0, 0, 0, 1);
+    }
+    if (IsPlayerInRangeOfPoint(playerid, 4.0,2825.5720,-2217.0366,6.1501))
+    {
+        SetPlayerCheckpoint(playerid, 2847.6199,-2181.6360,6.4229, 4.0);
+        ApplyAnimation(playerid, "CARRY", "putdwn", 4.0, 0, 0, 0, 0, 0, 1);
+	}
+  	if (IsPlayerInRangeOfPoint(playerid, 4.0,2847.6199,-2181.6360,6.4229))
+	{
+        SetPlayerCheckpoint(playerid, 2880.7322,-2160.9758,3.4194, 4.0);
+        ApplyAnimation(playerid, "CARRY", "putdwn", 4.0, 0, 0, 0, 0, 0, 1);
+	}
+    if (IsPlayerInRangeOfPoint(playerid, 4.0,2880.7322,-2160.9758,3.4194))
+    {
+        SetPlayerCheckpoint(playerid, 2897.5032,-2134.2986,3.2348, 4.0);
+        ApplyAnimation(playerid, "CARRY", "putdwn", 4.0, 0, 0, 0, 0, 0, 1);
+    }
+    if (IsPlayerInRangeOfPoint(playerid, 4.0,2897.5032,-2134.2986,3.2348))
+    {
+        SetPlayerCheckpoint(playerid, 2908.9009,-2125.5317,1.6027, 4.0);
+        ApplyAnimation(playerid, "CARRY", "putdwn", 4.0, 0, 0, 0, 0, 0, 1);
+	}
+    if (IsPlayerInRangeOfPoint(playerid, 4.0,2908.9009,-2125.5317,1.6027))
+    {
+	    SetPlayerCheckpoint(playerid, 2910.1626,-2100.1104,1.9539, 4.0);
+	    ApplyAnimation(playerid, "CARRY", "putdwn", 4.0, 0, 0, 0, 0, 0, 1);
+	}
+    if (IsPlayerInRangeOfPoint(playerid, 4.0,2910.1626,-2100.1104,1.9539))
+    {
+      	ApplyAnimation(playerid, "CARRY", "putdwn", 4.0, 0, 0, 0, 0, 0, 1);
+      	SetPlayerCheckpoint(playerid, 2808.1736,-2230.7356,4.0762, 1.0);
+		pData[playerid][pMicin] += 5;
+		Info(playerid, "Anda Berhasil Mengumpulkan Micin Sebanyak 5 Buah!");
+    }	
+	// End Checkpoint Job Micin
+	new playerState = GetPlayerState(playerid);
+    if(playerState == PLAYER_STATE_ONFOOT )
+    {
+	    if(Kurir[playerid] == true)
+	    {
+            if(angkatBox[playerid] == false)
+	        {
+				 Error(playerid,"Silahkan bawa Box pengiriman barang, /angkatbox");
+			}
+			else if(angkatBox[playerid] == true)
+	        {
+	        RemovePlayerAttachedObject(playerid, BOX_INDEX);
+			GameTextForPlayer(playerid, "~g~MELETAKKAN BARANG...", 4000, 3);
+            ApplyAnimation(playerid,"BOMBER","BOM_Plant",4.0,0 ,0,0,0,0,1);
+	        Unload_Timer[playerid] = SetTimerEx("PekerjaanSelesai", 5000, false, "i", playerid);
+	        TogglePlayerControllable(playerid,0);
+		    }
+        }
+	}
+	if(pData[playerid][pHauling] > -1)
+	{
+		if(IsPlayerInRangeOfPoint(playerid, 5.5, 336.70, 895.54, 20.40))
+		{
+			DisablePlayerCheckpoint(playerid);
+			Info(playerid, "/buy , /gps(My Hauling) , /storegas.");
+		}
+	}
+	if(pData[playerid][pCP] == 1)
+	{
+		pData[playerid][pJobTime] = 120;
+		DisablePlayerCheckpoint(playerid);
+		AddPlayerSalary(playerid, "Job (Kurir)", 1200);
+        pData[playerid][pKurirEnd] = 0;
+        pData[playerid][pCP] = 0;
+		Info(playerid, "Job (Kurir) telah masuk ke pending salary anda!");
+		RemovePlayerFromVehicle(playerid);
+		SetTimerEx("RespawnPV", 3000, false, "d", GetPlayerVehicleID(playerid));
+	}
+	if(pData[playerid][CarryingLog] != -1)
+	{
+		if(GetPVarInt(playerid, "LoadingCooldown") > gettime()) return 1;
+		new vehicleid = GetPVarInt(playerid, "LastVehicleID"), type[64], carid = -1;
+		if(pData[playerid][CarryingLog] == 0)
+		{
+			type = "Metal";
+		}
+		else if(pData[playerid][CarryingLog] == 1)
+		{
+			type = "Coal";
+		}
+		else
+		{
+			type = "Unknown";
+		}
+		if(Vehicle_LogCount(vehicleid) >= LOG_LIMIT) return Error(playerid, "You can't load any more ores to this vehicle.");
+		if((carid = Vehicle_Nearest2(playerid)) != -1)
+		{
+			if(pData[playerid][CarryingLog] == 0)
+			{
+				pvData[carid][cMetal] += 1;
+			}
+			else if(pData[playerid][CarryingLog] == 1)
+			{
+				pvData[carid][cCoal] += 1;
+			}
+		}
+		LogStorage[vehicleid][ pData[playerid][CarryingLog] ]++;
+		Info(playerid, "MINING: Loaded %s.", type);
+		ApplyAnimation(playerid, "CARRY", "putdwn05", 4.1, 0, 1, 1, 0, 0, 1);
+		Player_RemoveLog(playerid);
+		DisablePlayerCheckpoint(playerid);
+		return 1;
+	}
+	if(pData[playerid][pFindEms] != INVALID_PLAYER_ID)
+	{
+		pData[playerid][pFindEms] = INVALID_PLAYER_ID;
+		DisablePlayerCheckpoint(playerid);
+	}
+	if(pData[playerid][pSekolahSIM] == 1)
+	{
+		new vehicleid = GetPlayerVehicleID(playerid);
+		if(IsDMVcar(vehicleid))
+		{
+			if(IsPlayerInRangeOfPoint(playerid, 4.0, dmvpoint1))
+			{
+				SetPlayerCheckpoint(playerid, dmvpoint2, 4.0);
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 4.0, dmvpoint2))
+			{
+				SetPlayerCheckpoint(playerid, dmvpoint3, 4.0);
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 4.0, dmvpoint3))
+			{
+				SetPlayerCheckpoint(playerid, dmvpoint4, 4.0);
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 4.0, dmvpoint4))
+			{
+				SetPlayerCheckpoint(playerid, dmvpoint5, 4.0);
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 4.0, dmvpoint5))
+			{
+				SetPlayerCheckpoint(playerid, dmvpoint6, 4.0);
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 4.0, dmvpoint6))
+			{
+				SetPlayerCheckpoint(playerid, dmvpoint7, 4.0);
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 4.0, dmvpoint7))
+			{
+				pData[playerid][pSekolahSIM] = 0;
+				DisablePlayerCheckpoint(playerid);
+    			pData[playerid][pDriveLic] = 1;
+    			pData[playerid][pDriveLicTime] = gettime() + (15 * 86400);
+    			Servers(playerid, "Tes berhasil! Anda telah menerima Lisensi Mengemudi selama 14 hari.");
+    			SetTimerEx("RespawnPV", 100, false, "d", vehicleid);
+			}
+		}
+	}
+	if(pData[playerid][pSideJob] == 1)
+	{
+		new vehicleid = GetPlayerVehicleID(playerid);
+		if(GetVehicleModel(vehicleid) == 574)
+		{
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,sweperpoint1))
+			{
+				SetPlayerCheckpoint(playerid, sweperpoint2, 7.0);
+				//GameTextForPlayer(playerid, "~g~Bersih!", 1000, 3);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,sweperpoint2))
+			{
+				SetPlayerCheckpoint(playerid, sweperpoint3, 7.0);
+				//GameTextForPlayer(playerid, "~g~Bersih!", 1000, 3);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,sweperpoint3))
+			{
+				SetPlayerCheckpoint(playerid, sweperpoint4, 7.0);
+				//GameTextForPlayer(playerid, "~g~Bersih!", 1000, 3);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,sweperpoint4))
+			{
+				SetPlayerCheckpoint(playerid, sweperpoint5, 7.0);
+				//GameTextForPlayer(playerid, "~g~Bersih!", 1000, 3);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,sweperpoint5))
+			{
+				SetPlayerCheckpoint(playerid, sweperpoint6, 7.0);
+				//GameTextForPlayer(playerid, "~g~Bersih!", 1000, 3);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,sweperpoint6))
+			{
+				SetPlayerCheckpoint(playerid, sweperpoint7, 7.0);
+				//GameTextForPlayer(playerid, "~g~Bersih!", 1000, 3);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,sweperpoint7))
+			{
+				SetPlayerCheckpoint(playerid, sweperpoint8, 7.0);
+				//GameTextForPlayer(playerid, "~g~Bersih!", 1000, 3);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,sweperpoint8))
+			{
+				SetPlayerCheckpoint(playerid, sweperpoint9, 7.0);
+				//GameTextForPlayer(playerid, "~g~Bersih!", 1000, 3);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,sweperpoint9))
+			{
+				SetPlayerCheckpoint(playerid, sweperpoint10, 7.0);
+				//GameTextForPlayer(playerid, "~g~Bersih!", 1000, 3);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,sweperpoint10))
+			{
+				SetPlayerCheckpoint(playerid, sweperpoint11, 7.0);
+				//GameTextForPlayer(playerid, "~g~Bersih!", 1000, 3);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,sweperpoint11))
+			{
+				SetPlayerCheckpoint(playerid, sweperpoint12, 7.0);
+				//GameTextForPlayer(playerid, "~g~Bersih!", 1000, 3);
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 7.0,sweperpoint12))
+			{
+				pData[playerid][pSideJob] = 0;
+				pData[playerid][pSideJobTime] = 120;
+				DisablePlayerCheckpoint(playerid);
+				AddPlayerSalary(playerid, "Sidejob(Sweeper)", 1290);
+				Info(playerid, "Sidejob(Sweeper) telah masuk ke pending salary anda!");
+				RemovePlayerFromVehicle(playerid);
+				SetTimerEx("RespawnPV", 3000, false, "d", vehicleid);
+			}
+		}
+	}
+	if(pData[playerid][pSideJob] == 2)
+	{
+		new vehicleid = GetPlayerVehicleID(playerid);
+		if(GetVehicleModel(vehicleid) == 431)
+		{
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint1))
+			{
+				SetPlayerCheckpoint(playerid, buspoint2, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint2))
+			{
+				SetPlayerCheckpoint(playerid, buspoint3, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint3))
+			{
+				SetPlayerCheckpoint(playerid, buspoint4, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint4))
+			{
+				SetPlayerCheckpoint(playerid, buspoint5, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint5))
+			{
+				SetPlayerCheckpoint(playerid, buspoint6, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint6))
+			{
+				SetPlayerCheckpoint(playerid, buspoint7, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint7))
+			{
+				SetPlayerCheckpoint(playerid, buspoint8, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint8))
+			{
+				SetPlayerCheckpoint(playerid, buspoint9, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint9))
+			{
+				SetPlayerCheckpoint(playerid, buspoint10, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint10))
+			{
+				SetPlayerCheckpoint(playerid, buspoint11, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint11))
+			{
+				SetPlayerCheckpoint(playerid, buspoint12, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint12))
+			{
+				SetPlayerCheckpoint(playerid, buspoint13, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint13))
+			{
+				SetPlayerCheckpoint(playerid, buspoint14, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint14))
+			{
+				SetPlayerCheckpoint(playerid, buspoint15, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint15))
+			{
+				SetPlayerCheckpoint(playerid, buspoint16, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint16))
+			{
+				SetPlayerCheckpoint(playerid, buspoint17, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint17))
+			{
+				SetPlayerCheckpoint(playerid, buspoint18, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint18))
+			{
+				SetPlayerCheckpoint(playerid, buspoint19, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint19))
+			{
+				SetPlayerCheckpoint(playerid, buspoint20, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint20))
+			{
+				SetPlayerCheckpoint(playerid, buspoint21, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint21))
+			{
+				SetPlayerCheckpoint(playerid, buspoint22, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint22))
+			{
+				SetPlayerCheckpoint(playerid, buspoint23, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint23))
+			{
+				SetPlayerCheckpoint(playerid, buspoint24, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint24))
+			{
+				SetPlayerCheckpoint(playerid, buspoint25, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint25))
+			{
+				SetPlayerCheckpoint(playerid, buspoint26, 7.0);
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 7.0,buspoint26))
+			{
+				SetPlayerCheckpoint(playerid, buspoint27, 7.0);
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 7.0,buspoint27))
+			{
+				pData[playerid][pSideJob] = 0;
+				pData[playerid][pSideJobTime] = 360;
+				DisablePlayerCheckpoint(playerid);
+				AddPlayerSalary(playerid, "Sidejob(Bus)", 1470);
+				Info(playerid, "Sidejob(Bus) telah masuk ke pending salary anda!");
+				RemovePlayerFromVehicle(playerid);
+				SetTimerEx("RespawnPV", 3000, false, "d", vehicleid);
+			}
+		}
+	}
+	if(pData[playerid][pSideJob] == 3)
+	{
+		new vehicleid = GetPlayerVehicleID(playerid);
+		if(GetVehicleModel(vehicleid) == 530)
+		{
+			if (IsPlayerInRangeOfPoint(playerid, 4.0,forpoint1))
+			{
+				SetPlayerCheckpoint(playerid, 2400.02,-2565.49,13.21, 4.0);
+				TogglePlayerControllable(playerid, 0);
+				GameTextForPlayer(playerid, "~w~MEMUAT ~g~BARANG...", 5000, 3);
+				SetTimerEx("JobForklift", 3000, false, "i", playerid);
+				return 1;
+			}
+			if (IsPlayerInRangeOfPoint(playerid, 4.0,forpoint2))
+			{
+				SetPlayerCheckpoint(playerid, 2752.89,-2392.60,13.64, 4.0);
+				TogglePlayerControllable(playerid, 0);
+				GameTextForPlayer(playerid, "~w~MELETAKKAN ~g~BARANG...", 5000, 3);
+				SetTimerEx("JobForklift", 3000, false, "i", playerid);
+				return 1;
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 4.0,forpoint3))
+			{
+				pData[playerid][pSideJob] = 0;
+				pData[playerid][pSideJobTime] = 80;
+				DisablePlayerCheckpoint(playerid);
+				AddPlayerSalary(playerid, "Sidejob(Forklift)", 960);
+				Info(playerid, "Sidejob(Forklift) telah masuk ke pending salary anda!");
+				RemovePlayerFromVehicle(playerid);
+				SetTimerEx("RespawnPV", 3000, false, "d", vehicleid);
+				return 1;
+			}
+		}
+	}
+    if(pData[playerid][pSideJob] == 4)
+	{
+		new vehicleid = GetPlayerVehicleID(playerid);
+		if(IsAMowerVeh(vehicleid))
+		{
+			if(IsPlayerInRangeOfPoint(playerid, 3.0, mowpoint1))
+			{
+				SetPlayerCheckpoint(playerid, mowpoint2, 3.0);
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 3.0, mowpoint2))
+			{
+				SetPlayerCheckpoint(playerid, mowpoint3, 3.0);
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 3.0, mowpoint3))
+			{
+				TogglePlayerControllable(playerid, 0);
+                pData[playerid][pActivity] = SetTimerEx("PotongRumput", 550, true, "i", playerid);
+                PlayerTextDrawSetString(playerid, ActiveTD[playerid], "Cutting Grass...");
+                PlayerTextDrawShow(playerid, ActiveTD[playerid]);
+                ShowPlayerProgressBar(playerid, pData[playerid][activitybar]);
+				SetPlayerCheckpoint(playerid, mowpoint4, 3.0);
+                return 1;
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 3.0, mowpoint4))
+			{
+				TogglePlayerControllable(playerid, 0);
+                pData[playerid][pActivity] = SetTimerEx("PotongRumput", 600, true, "i", playerid);
+                PlayerTextDrawSetString(playerid, ActiveTD[playerid], "Cutting Grass...");
+                PlayerTextDrawShow(playerid, ActiveTD[playerid]);
+                ShowPlayerProgressBar(playerid, pData[playerid][activitybar]);
+				SetPlayerCheckpoint(playerid, mowpoint5, 3.0);
+                return 1;
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 3.0, mowpoint5))
+			{
+				SetPlayerCheckpoint(playerid, mowpoint6, 3.0);
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 3.0, mowpoint6))
+			{
+				SetPlayerCheckpoint(playerid, mowpoint7, 3.0);
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 3.0, mowpoint7))
+			{
+				TogglePlayerControllable(playerid, 0);
+                pData[playerid][pActivity] = SetTimerEx("PotongRumput", 800, true, "i", playerid);
+                PlayerTextDrawSetString(playerid, ActiveTD[playerid], "Cutting Grass...");
+                PlayerTextDrawShow(playerid, ActiveTD[playerid]);
+                ShowPlayerProgressBar(playerid, pData[playerid][activitybar]);
+				SetPlayerCheckpoint(playerid, mowpoint8, 3.0);
+                return 1;
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 3.0, mowpoint8))
+			{
+				SetPlayerCheckpoint(playerid, mowpoint9, 3.0);
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 3.0, mowpoint9))
+			{
+				TogglePlayerControllable(playerid, 0);
+                pData[playerid][pActivity] = SetTimerEx("PotongRumput", 1000, true, "i", playerid);
+                PlayerTextDrawSetString(playerid, ActiveTD[playerid], "Cutting Grass...");
+                PlayerTextDrawShow(playerid, ActiveTD[playerid]);
+                ShowPlayerProgressBar(playerid, pData[playerid][activitybar]);
+				SetPlayerCheckpoint(playerid, mowpoint10, 3.0);
+                return 1;
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 3.0, mowpoint10))
+			{
+				TogglePlayerControllable(playerid, 0);
+                pData[playerid][pActivity] = SetTimerEx("PotongRumput", 700, true, "i", playerid);
+                PlayerTextDrawSetString(playerid, ActiveTD[playerid], "Cutting Grass...");
+                PlayerTextDrawShow(playerid, ActiveTD[playerid]);
+                ShowPlayerProgressBar(playerid, pData[playerid][activitybar]);
+				SetPlayerCheckpoint(playerid, mowpoint11, 3.0);
+                return 1;
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 3.0, mowpoint11))
+			{
+				SetPlayerCheckpoint(playerid, mowpoint12, 3.0);
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 3.0, mowpoint12))
+			{
+				SetPlayerCheckpoint(playerid, mowpoint13, 3.0);
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 3.0, mowpoint13))
+			{
+				SetPlayerCheckpoint(playerid, mowpoint14, 3.0);
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 3.0, mowpoint14))
+			{
+				SetPlayerCheckpoint(playerid, mowpoint15, 3.0);
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 3.0, mowpoint15))
+			{
+				SetPlayerCheckpoint(playerid, mowpoint16, 3.0);
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 3.0, mowpoint16))
+			{
+				SetPlayerCheckpoint(playerid, mowpoint17, 3.0);
+			}
+			if(IsPlayerInRangeOfPoint(playerid, 3.0, mowpoint17))
+			{
+				DisablePlayerCheckpoint(playerid);
+				pData[playerid][pSideJob] = 0;
+				pData[playerid][pSideJobTime] = 80;
+				AddPlayerSalary(playerid, "Sidejob(Mower)", 1440);
