@@ -1,0 +1,143 @@
+CMD:detain(playerid, params[])
+{
+    new vehicleid = GetNearestVehicleToPlayer(playerid, 3.0, false), otherid;
+
+    if(pData[playerid][pFaction] != 1)
+        return Error(playerid, "Kamu harus menjadi police officer.");
+	
+    if(sscanf(params, "u", otherid))
+        return Usage(playerid, "/detain [playerid/PartOfName]");
+
+    if(otherid == INVALID_PLAYER_ID)
+        return Error(playerid, "That player is disconnected.");
+
+    if(otherid == playerid)
+        return Error(playerid, "You cannot detained yourself.");
+
+    if(!NearPlayer(playerid, otherid, 5.0))
+        return Error(playerid, "You must be near this player.");
+
+    if(!pData[otherid][pCuffed])
+        return Error(playerid, "The player is not cuffed at the moment.");
+
+    if(vehicleid == INVALID_VEHICLE_ID)
+        return Error(playerid, "You are not near any vehicle.");
+
+    if(GetVehicleMaxSeats(vehicleid) < 2)
+        return Error(playerid, "You can't detain that player in this vehicle.");
+
+    if(IsPlayerInVehicle(otherid, vehicleid))
+    {
+        TogglePlayerControllable(otherid, 1);
+
+        RemoveFromVehicle(otherid);
+        SendNearbyMessage(playerid, 30.0, COLOR_PURPLE, "* %s opens the door and pulls %s out the vehicle.", ReturnName(playerid), ReturnName(otherid));
+    }
+    else
+    {
+        new seatid = GetAvailableSeat(vehicleid, 2);
+
+        if(seatid == -1)
+            return Error(playerid, "There are no more seats remaining.");
+
+        new
+            string[64];
+
+        format(string, sizeof(string), "You've been ~r~detained~w~ by %s.", ReturnName(playerid));
+        TogglePlayerControllable(otherid, 0);
+
+        //StopDragging(otherid);
+        PutPlayerInVehicle(otherid, vehicleid, seatid);
+
+        SendNearbyMessage(playerid, 30.0, COLOR_PURPLE, "* %s opens the door and places %s into the vehicle.", ReturnName(playerid), ReturnName(otherid));
+        InfoTD_MSG(otherid, 3500, string);
+    }
+    return 1;
+}
+
+CMD:cuff(playerid, params[])
+{
+    if(pData[playerid][pFaction] == 1 || pData[playerid][pFaction] == 2)
+    {
+        if(!pData[playerid][pOnDuty])
+            return Error(playerid, "You must be on duty to use cuff.");
+
+        new otherid;
+        if(sscanf(params, "u", otherid))
+            return Usage(playerid, "/cuff [playerid/PartOfName]");
+
+        if(otherid == INVALID_PLAYER_ID)
+            return Error(playerid, "That player is disconnected.");
+
+        if(otherid == playerid)
+            return Error(playerid, "You cannot handcuff yourself.");
+
+        if(!NearPlayer(playerid, otherid, 5.0))
+            return Error(playerid, "You must be near this player.");
+
+        if(GetPlayerState(otherid) != PLAYER_STATE_ONFOOT)
+            return Error(playerid, "The player must be onfoot before you can cuff them.");
+
+        if(pData[otherid][pCuffed])
+            return Error(playerid, "The player is already cuffed.");
+
+        // Set the cuffed flag for the target player and apply the handcuff action
+        pData[otherid][pCuffed] = 1;
+        SetPlayerSpecialAction(otherid, SPECIAL_ACTION_CUFFED);
+        TogglePlayerControllable(otherid, 0);
+
+        new mstr[128];
+        format(mstr, sizeof(mstr), "You've been ~r~cuffed~w~ by %s.", ReturnName(playerid));
+        InfoTD_MSG(otherid, 3500, mstr);
+
+        SendNearbyMessage(playerid, 30.0, COLOR_PURPLE, "* %s tightens a pair of handcuffs on %s's wrists.", ReturnName(playerid), ReturnName(otherid));
+    }
+    else
+    {
+        return Error(playerid, "You are not police/government.");
+    }
+    return 1;
+}
+
+CMD:uncuff(playerid, params[])
+{
+	if(pData[playerid][pFaction] == 1 || pData[playerid][pFaction] == 2)
+	{
+	
+		if(!pData[playerid][pOnDuty])
+			return Error(playerid, "You must on duty to use cuff.");
+		
+		new otherid;
+		if(sscanf(params, "u", otherid))
+			return Usage(playerid, "/uncuff [playerid/PartOfName]");
+
+		if(otherid == INVALID_PLAYER_ID)
+			return Error(playerid, "That player is disconnected.");
+
+		if(otherid == playerid)
+			return Error(playerid, "You cannot uncuff yourself.");
+
+		if(!NearPlayer(playerid, otherid, 5.0))
+			return Error(playerid, "You must be near this player.");
+
+		if(!pData[otherid][pCuffed])
+			return Error(playerid, "The player is not cuffed at the moment.");
+
+		static
+			string[64];
+
+		pData[otherid][pCuffed] = 1;
+		SetPlayerSpecialAction(otherid, SPECIAL_ACTION_NONE);
+		TogglePlayerControllable(otherid, 1);
+
+		format(string, sizeof(string), "You've been ~g~uncuffed~w~ by %s.", ReturnName(playerid));
+		InfoTD_MSG(otherid, 3500, string);
+
+		SendNearbyMessage(playerid, 30.0, COLOR_PURPLE, "* %s loosens the pair of handcuffs on %s's wrists.", ReturnName(playerid), ReturnName(otherid));
+	}
+	else
+	{
+		return Error(playerid, "You not police/gov.");
+	}
+    return 1;
+}
