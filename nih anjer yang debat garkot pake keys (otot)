@@ -1,0 +1,24 @@
+public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+{
+	if(newkeys == KEY_CROUCH)
+   	{
+      	if(IsPlayerInAnyVehicle(playerid))
+      	{
+        	return callcmd::paytoll(playerid);
+      	}
+   	}
+	if(newkeys == KEY_CROUCH)
+   	{
+      	if(IsPlayerInAnyVehicle(playerid))
+      	{
+        	return callcmd::inputveh(playerid);
+      	}
+   	}
+	if(newkeys == KEY_FIRE)
+   	{
+      	if(IsPlayerInAnyVehicle(playerid))
+      	{
+        	return callcmd::takeveh(playerid);
+      	}
+   	}
+}
