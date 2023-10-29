@@ -1,0 +1,145 @@
+	//SAPD LSPD Vehicles
+	
+
+	SAPDVehicles[0] = AddStaticVehicleEx(596,1602.0660,-1683.9678,5.6124,90.3080,0,1, VEHICLE_RESPAWN, 1); // Cruiser
+	SAPDVehicles[1] = AddStaticVehicleEx(596,1602.1194,-1687.9663,5.6107,90.5233,0,1, VEHICLE_RESPAWN, 1); // Cruiser
+	SAPDVehicles[2] = AddStaticVehicleEx(596,1602.1680,-1692.0110,5.6113,89.5516,0,1, VEHICLE_RESPAWN, 1); // Cruiser
+	SAPDVehicles[3] = AddStaticVehicleEx(596,1602.1666,-1696.1469,5.6123,90.4002,0,1, VEHICLE_RESPAWN, 1); // Cruiser
+	SAPDVehicles[4] = AddStaticVehicleEx(596,1602.1936,-1700.1580,5.6113,89.7974,0,1, VEHICLE_RESPAWN, 1); // Cruiser
+	SAPDVehicles[5] = AddStaticVehicleEx(596,1602.1382,-1704.3373,5.6118,88.9091,0,1, VEHICLE_RESPAWN, 1); // Cruiser
+	SAPDVehicles[6] = AddStaticVehicleEx(407,1595.5073,-1710.6666,5.6109,0.1711,0,1, VEHICLE_RESPAWN, 1); // Cruiser
+	SAPDVehicles[7] = AddStaticVehicleEx(544,1591.3687,-1710.6256,5.6119,358.8773,0,1, VEHICLE_RESPAWN, 1); // Cruiser
+	SAPDVehicles[8] = AddStaticVehicleEx(596,1587.3217,-1710.6517,5.6118,0.3150,0,1, VEHICLE_RESPAWN, 1); // Cruiser
+	SAPDVehicles[9] = AddStaticVehicleEx(596,1583.3668,-1710.7098,5.6118,0.0238,0,1, VEHICLE_RESPAWN, 1); // Cruiser
+	SAPDVehicles[10] = AddStaticVehicleEx(599,1545.7213,-1655.0195,6.0814,90.4218,0,1, VEHICLE_RESPAWN, 1); // Rancher
+	SAPDVehicles[11] = AddStaticVehicleEx(599,1545.8069,-1651.1516,6.0790,88.2897,0,1, VEHICLE_RESPAWN, 1); // Rancher
+	SAPDVehicles[12] = AddStaticVehicleEx(601,1526.5850,-1644.1801,5.6494,180.3210,1,1, VEHICLE_RESPAWN, 1); // Splashy
+	SAPDVehicles[13] = AddStaticVehicleEx(601,1530.7244,-1644.2538,5.6494,179.6148,1,1, VEHICLE_RESPAWN, 1); // Splashy
+	SAPDVehicles[14] = AddStaticVehicleEx(528,1527.6542,-1655.9646,5.9339,270.1992,0,0, VEHICLE_RESPAWN, 1); // SWAT Van
+	SAPDVehicles[15] = AddStaticVehicleEx(560,1584.7515,-1667.5281,5.5974,270.7136,0,0, VEHICLE_RESPAWN, 1); // Sultan
+	SAPDVehicles[16] = AddStaticVehicleEx(560,1584.7291,-1671.6987,5.5982,268.7675,0,0, VEHICLE_RESPAWN, 1); // Sultan
+	SAPDVehicles[17] = AddStaticVehicleEx(523,1584.7783,-1675.3850,5.4639,270.6620,0,0, VEHICLE_RESPAWN, 1); // Police Bike
+	SAPDVehicles[18] = AddStaticVehicleEx(523,1585.0814,-1680.4186,5.4661,272.0062,0,0, VEHICLE_RESPAWN, 1); // Police Bike
+	SAPDVehicles[19] = AddStaticVehicleEx(523,1587.2833,-1677.7260,5.4654,269.2448,0,0, VEHICLE_RESPAWN, 1); // Police Bike
+	SAPDVehicles[20] = AddStaticVehicleEx(596,1535.9803,-1677.6580,13.1176,359.4672,0,1, VEHICLE_RESPAWN, 1); // Cruiser (Front)
+	SAPDVehicles[21] = AddStaticVehicleEx(596,1535.9502,-1667.3008,13.1039,180.1666,0,1, VEHICLE_RESPAWN, 1); // Cruiser (Front)
+	SAPDVehicles[22] = AddStaticVehicleEx(525,1556.5985,-1606.3214,13.2680,179.1279,17,20, VEHICLE_RESPAWN, 1); // Tow Truck
+	SAPDVehicles[23] = AddStaticVehicleEx(525,1560.8201,-1606.3423,13.2557,178.6305,18,20, VEHICLE_RESPAWN, 1); // Tow Truck
+
+    SAPDVehicles[24] = AddStaticVehicleEx(528,970.510,-1522.780,13.596,179.665,0,1, VEHICLE_RESPAWN, 1);
+    SAPDVehicles[25] = AddStaticVehicleEx(490,958.148,-1540.730,13.720,272.395,0,1, VEHICLE_RESPAWN, 1);
+    SAPDVehicles[26] = AddStaticVehicleEx(528,966.725,-1522.855,13.597,179.865,0,1, VEHICLE_RESPAWN, 1);
+    SAPDVehicles[27] = AddStaticVehicleEx(522,995.503,-1524.895,13.126,90.477,0,1, VEHICLE_RESPAWN, 1);
+    SAPDVehicles[28] = AddStaticVehicleEx(522,995.496,-1526.767,13.130,94.306,0,1, VEHICLE_RESPAWN, 1);
+    SAPDVehicles[29] = AddStaticVehicleEx(541,974.280,-1522.607,13.175,180.783,0,1, VEHICLE_RESPAWN, 1);
+    SAPDVehicles[30] = AddStaticVehicleEx(541,977.041,-1522.859,13.177,177.283,0,1, VEHICLE_RESPAWN, 1);
+    SAPDVehicles[31] = AddStaticVehicleEx(468,995.620,-1529.294,13.235,90.047,0,1, VEHICLE_RESPAWN, 1);
+    SAPDVehicles[32] = AddStaticVehicleEx(468,995.575,-1530.840,13.237,91.248,0,1, VEHICLE_RESPAWN, 1);
+    SAPDVehicles[33] = AddStaticVehicleEx(497,1009.070,-1553.469,27.856,90.971,0,1, VEHICLE_RESPAWN, 1);
+    SAPDVehicles[34] = AddStaticVehicleEx(470,963.250,-1523.172,13.547,183.462,0,1, VEHICLE_RESPAWN, 1);
+    SAPDVehicles[35] = AddStaticVehicleEx(427,957.828,-1533.500,13.706,269.931,0,1, VEHICLE_RESPAWN, 1);
+    SAPDVehicles[36] = AddStaticVehicleEx(490,957.852,-1537.012,13.709,270.879,0,1, VEHICLE_RESPAWN, 1);
+    SAPDVehicles[37] = AddStaticVehicleEx(470,959.940,-1523.234,13.546,184.818,0,1, VEHICLE_RESPAWN, 1);
+    
+	for(new x;x<sizeof(SAPDVehicles);x++)
+	{
+	    format(strings, sizeof(strings), "SAPD-%d", SAPDVehicles[x]);
+	    SetVehicleNumberPlate(SAPDVehicles[x], strings);
+	    SetVehicleToRespawn(SAPDVehicles[x]);
+	}
+	
+	/*SAGSVehicles[0] = AddStaticVehicleEx(409, 1534.4767, -1757.0521, 13.1437, 180.2723, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[1] = AddStaticVehicleEx(409, 1545.6013, -1757.0219, 13.1437, 180.2723, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[2] = AddStaticVehicleEx(409, 1539.9905, -1757.0594, 13.1437, 180.2723, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[3] = AddStaticVehicleEx(400, 1553.3678, -1775.4850, 13.5501, 91.0000, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[4] = AddStaticVehicleEx(400, 1553.2333, -1771.4791, 13.5501, 91.0000, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[5] = AddStaticVehicleEx(560, 1553.9814, -1783.3425, 13.0479, 91.0000, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[6] = AddStaticVehicleEx(560, 1553.9375, -1779.5382, 13.0479, 91.0000, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[7] = AddStaticVehicleEx(426, 1553.6774, -1787.2021, 13.1542, 91.0000, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[8] = AddStaticVehicleEx(439, 1553.3984, -1791.1477, 13.2904, 90.3328, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[9] = AddStaticVehicleEx(562, 1553.8031, -1795.1871, 13.1378, 91.0000, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[10] = AddStaticVehicleEx(437, 1545.9094, -1819.8540, 13.4641, 0.0000, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[11] = AddStaticVehicleEx(483, 1540.3176, -1818.8209, 13.4678, 0.0000, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[12] = AddStaticVehicleEx(521, 1524.2035, -1754.7806, 12.9503, 178.0000, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[13] = AddStaticVehicleEx(521, 1527.6666, -1754.8362, 12.9503, 178.0000, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[14] = AddStaticVehicleEx(521, 1525.8569, -1754.8169, 12.9503, 178.0000, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[15] = AddStaticVehicleEx(461, 1518.5685, -1754.8243, 12.9700, 178.0000, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[16] = AddStaticVehicleEx(461, 1522.2450, -1754.6913, 12.9700, 178.0000, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[17] = AddStaticVehicleEx(461, 1520.4065, -1754.8032, 12.9700, 178.0000, 0, 1, VEHICLE_RESPAWN);
+	//SAGSVehicles[18] = AddStaticVehicleEx(417, 1530.6005, -1807.9861, 13.7233, 0.0000, -1, -1, VEHICLE_RESPAWN);	//heli
+	//SAGSVehicles[19] = AddStaticVehicleEx(487, 1510.3551, -1816.0139, 13.6872, -84.0000, -1, -1, VEHICLE_RESPAWN);	//heli*/
+	
+	/*SAGSVehicles[0] = AddStaticVehicleEx(409, 1414.6333, -1859.0222, 13.1326, 90.3330, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[1] = AddStaticVehicleEx(409, 1415.2675, -1844.1443, 13.1326, 90.3330, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[2] = AddStaticVehicleEx(411, 1415.4066, -1834.1469, 13.2399, 90.5851, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[3] = AddStaticVehicleEx(411, 1415.4929, -1839.2155, 13.2399, 90.5851, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[4] = AddStaticVehicleEx(507, 1415.2688, -1829.0492, 13.2130, 89.9329, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[5] = AddStaticVehicleEx(431, 1413.0757, -1854.6390, 13.5431, 89.7958, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[6] = AddStaticVehicleEx(437, 1413.4871, -1849.3666, 13.5798, 90.3041, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[7] = AddStaticVehicleEx(521, 1459.8047, -1819.2911, 12.9433, 0.0000, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[8] = AddStaticVehicleEx(581, 1454.9469, -1818.9352, 13.0384, 0.0000, 0, 1, VEHICLE_RESPAWN);
+	SAGSVehicles[9] = AddStaticVehicleEx(461, 1449.7579, -1818.8969, 13.0665, 0.0000, 0, 1, VEHICLE_RESPAWN);*/
+	
+	BSVehicles[0] = AddStaticVehicleEx(498, 1109.7406, -1218.8962, 18.1310, 0.0000, 0, 0, VEHICLE_RESPAWN);
+	BSVehicles[1] = AddStaticVehicleEx(487, 1136.6575, -1169.3149, 32.0275, 0.0000, 0, 1, VEHICLE_RESPAWN);
+	
+	SAGSVehicles[0] = AddStaticVehicleEx(405, 1507.6377, -1747.9199, 13.5757, 0.0000, 0, 0, VEHICLE_RESPAWN);
+	SAGSVehicles[1] = AddStaticVehicleEx(405, 1455.3049, -1748.5181, 13.3789, 0.0000, 0, 0, VEHICLE_RESPAWN);
+	SAGSVehicles[2] = AddStaticVehicleEx(409, 1498.6385, -1744.0792, 13.2442, 91.0000, 0, 0, VEHICLE_RESPAWN);
+	SAGSVehicles[3] = AddStaticVehicleEx(409, 1463.2329, -1743.9989, 13.2442, -91.0000, 0, 0, VEHICLE_RESPAWN);
+	SAGSVehicles[4] = AddStaticVehicleEx(411, 1524.1866, -1846.0491, 13.3714, 0.0000, 0, 0, VEHICLE_RESPAWN);
+	SAGSVehicles[5] = AddStaticVehicleEx(411, 1534.8187, -1845.9094, 13.3714, 0.0000, 0, 0, VEHICLE_RESPAWN);
+	SAGSVehicles[6] = AddStaticVehicleEx(411, 1529.4353, -1845.9347, 13.3714, 0.0000, 0, 0, VEHICLE_RESPAWN);
+	SAGSVehicles[7] = AddStaticVehicleEx(521, 1512.8479, -1846.1010, 13.0548, 0.0000, 0, 0, VEHICLE_RESPAWN);
+	SAGSVehicles[8] = AddStaticVehicleEx(521, 1519.4961, -1846.0326, 13.0548, 0.0000, 0, 0, VEHICLE_RESPAWN);
+	SAGSVehicles[9] = AddStaticVehicleEx(521, 1515.9736, -1845.9476, 13.0548, 0.0000, 0, 0, VEHICLE_RESPAWN);
+	SAGSVehicles[10] = AddStaticVehicleEx(437, 1494.1495, -1845.1425, 13.5694, -91.0000, 0, 0, VEHICLE_RESPAWN);
+
+	
+	for(new x;x<sizeof(SAGSVehicles);x++)
+	{
+	    format(strings, sizeof(strings), "SAGS-%d", SAGSVehicles[x]);
+	    SetVehicleNumberPlate(SAGSVehicles[x], strings);
+	    SetVehicleToRespawn(SAGSVehicles[x]);
+	}
+	
+	SAMDVehicles[0] = AddStaticVehicleEx(407, 1111.0358, -1328.3903, 13.6102, 0.0000, -1, 3, VEHICLE_RESPAWN, 1);
+	SAMDVehicles[1] = AddStaticVehicleEx(407, 1098.1630, -1328.7020, 13.7072, 0.0000, -1, 3, VEHICLE_RESPAWN, 1);
+	SAMDVehicles[2] = AddStaticVehicleEx(544, 1124.4944, -1327.0439, 13.9194, 0.0000, -1, 3, VEHICLE_RESPAWN, 1);
+	SAMDVehicles[3] = AddStaticVehicleEx(416, 1116.0294, -1296.6489, 13.6160, 179.4438, 1, 3, VEHICLE_RESPAWN, 1);
+	SAMDVehicles[4] = AddStaticVehicleEx(416, 1125.8785, -1296.2780, 13.6160, 179.4438, 1, 3, VEHICLE_RESPAWN, 1);
+	SAMDVehicles[5] = AddStaticVehicleEx(416, 1121.1556, -1296.4138, 13.6160, 179.4438, 1, 3, VEHICLE_RESPAWN, 1);
+	SAMDVehicles[6] = AddStaticVehicleEx(442, 1111.1719, -1296.7606, 13.4886, 185.0000, 0, 1, VEHICLE_RESPAWN, 1);
+	SAMDVehicles[7] = AddStaticVehicleEx(426, 1136.0360, -1341.2158, 13.3050, 0.0000, 0, 1, VEHICLE_RESPAWN, 1);
+	SAMDVehicles[8] = AddStaticVehicleEx(416, 1178.5963, -1338.9039, 14.1457, -91.0000, 1, 3, VEHICLE_RESPAWN, 1);
+	SAMDVehicles[9] = AddStaticVehicleEx(586, 1130.7795, -1330.4045, 13.3639, 0.0000, 0, 1, VEHICLE_RESPAWN, 1);
+	SAMDVehicles[10] = AddStaticVehicleEx(563, 1162.9077, -1313.8203, 32.1891, 270.6980, -1, 3, VEHICLE_RESPAWN, 1);
+	SAMDVehicles[11] = AddStaticVehicleEx(487, 1163.0469, -1297.5098, 31.5550, 269.6279, -1, 3, VEHICLE_RESPAWN, 1);
+	
+	for(new x;x<sizeof(SAMDVehicles);x++)
+	{
+	    format(strings, sizeof(strings), "SAMD-%d", SAMDVehicles[x]);
+	    SetVehicleNumberPlate(SAMDVehicles[x], strings);
+	    SetVehicleToRespawn(SAMDVehicles[x]);
+	}
+	
+	SANAVehicles[0] = AddStaticVehicleEx(582, 781.4338, -1337.5022, 13.9482, 91.0000, -1, -1, VEHICLE_RESPAWN);
+	SANAVehicles[1] = AddStaticVehicleEx(582, 758.7664, -1336.1642, 13.9482, 179.0212, -1, -1, VEHICLE_RESPAWN);
+	SANAVehicles[2] = AddStaticVehicleEx(582, 764.4276, -1336.1959, 13.9482, 179.0212, -1, -1, VEHICLE_RESPAWN);
+	SANAVehicles[3] = AddStaticVehicleEx(582, 770.3247, -1335.9663, 13.9482, 179.0212, -1, -1, VEHICLE_RESPAWN);
+	//SANAVehicles[4] = AddStaticVehicleEx(582, 781.8044, -1348.0001, 13.9482, 91.0000, -1, -1, VEHICLE_RESPAWN);
+	//SANAVehicles[5] = AddStaticVehicleEx(582, 781.6168, -1342.6869, 13.9482, 91.0000, -1, -1, VEHICLE_RESPAWN);
+	SANAVehicles[4] = AddStaticVehicleEx(418, 737.3025, -1334.3344, 14.1711, 246.6513, -1, -1, VEHICLE_RESPAWN);
+	SANAVehicles[5] = AddStaticVehicleEx(413, 736.4621, -1338.6304, 13.7490, -113.0000, -1, -1, VEHICLE_RESPAWN);
+	SANAVehicles[6] = AddStaticVehicleEx(405, 737.4107, -1343.0820, 13.7357, -113.0000, -1, -1, VEHICLE_RESPAWN);
+	SANAVehicles[7] = AddStaticVehicleEx(461, 749.7194, -1334.2122, 13.2465, 178.0000, -1, -1, VEHICLE_RESPAWN);
+	SANAVehicles[8] = AddStaticVehicleEx(461, 753.8127, -1334.2727, 13.2465, 178.0000, -1, -1, VEHICLE_RESPAWN);
+	//SANAVehicles[11] = AddStaticVehicleEx(461, 751.7328, -1334.2236, 13.2465, 178.0000, -1, -1, VEHICLE_RESPAWN);
+	SANAVehicles[9] = AddStaticVehicleEx(488, 741.9925, -1371.2443, 25.8111, 0.0000, -1, -1, VEHICLE_RESPAWN);
+	
+	for(new x;x<sizeof(SANAVehicles);x++)
+	{
+	    format(strings, sizeof(strings), "SANA-%d", SANAVehicles[x]);
+	    SetVehicleNumberPlate(SANAVehicles[x], strings);
+	    SetVehicleToRespawn(SANAVehicles[x]);
+	}
