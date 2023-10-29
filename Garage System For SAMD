@@ -1,0 +1,45 @@
+CMD:takevehsamd(playerid, params[])
+{
+	if(IsPlayerInRangeOfPoint(playerid, 3.0, 1097.921142, -1316.351074, 13.712451))
+	{
+		if(pData[playerid][pFaction] == 3)
+		{
+			ShowPlayerDialog(playerid, DIALOG_SPAWNCARSAMD, DIALOG_STYLE_LIST, "Vehicle SAMD", "Ambulance\nRanger\nSwat Tank\nFBI Truck\nHPV-1000\nNRG-500\nSultan\nBullet\nTow Truck", "Spawn", "Close");
+		}
+		else
+		{
+			Error(playerid, "Anda bukan anggota SAMD");
+		}
+	}
+	else
+	{
+		Error(playerid, "Anda tidak berada di checkpoint");
+	}
+}
+
+CMD:inputsamd(playerid, params[])
+{
+	if(IsPlayerInRangeOfPoint(playerid, 50.0, 1097.921142, -1316.351074, 13.712451))
+	{
+		if(pData[playerid][pFaction] == 3)
+		{
+			new vehicleid = GetPlayerVehicleID(playerid);
+			if(IsPlayerInAnyVehicle(playerid) && GetPlayerState(playerid) == PLAYER_STATE_DRIVER && IsSAMDCar(vehicleid))	// if(!IsPlayerInVehicle(playerid, SAMDVehicles[10]))
+			{
+		        DestroyVehicle(vehicleid);
+			}
+			else
+			{
+				SendClientMessage(playerid, -1, "Kamu sedang tidak didalam Mobil MD");
+			}
+		}
+		else
+		{
+			SendClientMessage(playerid, -1, "Anda bukan bagian dari SAMD! ");
+		}
+	}
+	else
+	{
+		SendClientMessage(playerid, -1, "Anda tidak berada Samd Vehicles");
+	}
+}
